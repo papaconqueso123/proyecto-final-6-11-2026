@@ -1,0 +1,220 @@
+
+/* ==============================
+   NAVBAR - VELVET MOON
+============================== */
+
+.navbar {
+  background: #080f20 !important;
+  padding: 16px 5%;
+  border-bottom: 1px solid #344e7e;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+/* LOGO / NOMBRE */
+
+.navbar .navbar-brand {
+  color: #a9c3ff;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 22px;
+  letter-spacing: 3px;
+  transition: color 0.3s ease;
+}
+
+.navbar .navbar-brand:hover {
+  color: #ffffff;
+}
+
+/* ENLACES */
+
+.navbar .navbar-nav {
+  gap: 12px;
+}
+
+.navbar .nav-link {
+  position: relative;
+  color: #b8c8ed !important;
+  font-size: 15px;
+  padding: 12px 10px;
+  transition: color 0.3s ease;
+}
+
+/* Hover y enlace activo */
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: #8badff !important;
+}
+
+/* Línea decorativa */
+
+.navbar .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 4px;
+  left: 10px;
+  right: 10px;
+  height: 2px;
+  background: #719cff;
+  box-shadow: 0 0 8px rgb(113 156 255 / 30%);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.navbar .nav-link:hover::after,
+.navbar .nav-link.active::after {
+  transform: scaleX(1);
+}
+
+/* ENLACES DESACTIVADOS */
+
+.navbar .nav-link.disabled {
+  color: #586783 !important;
+}
+
+/* MENÚ DESPLEGABLE */
+
+.navbar .dropdown-menu {
+  background: #101a30;
+  border: 1px solid #344e7e;
+  border-radius: 8px;
+  padding: 8px;
+  box-shadow: 0 10px 25px rgb(0 0 0 / 25%);
+}
+
+.navbar .dropdown-item {
+  color: #b8c8ed;
+  padding: 10px 14px;
+  font-size: 14px;
+  transition: all 0.25s ease;
+}
+
+.navbar .dropdown-item:hover,
+.navbar .dropdown-item:focus {
+  background: #1d2d4d;
+  color: #a9c3ff;
+  border-radius: 5px;
+}
+
+.navbar .dropdown-divider {
+  border-color: #344e7e;
+}
+
+/* BUSCADOR */
+
+.navbar .form-control {
+  background: #0c1528;
+  color: #e0e9ff;
+  border: 1px solid #395687;
+  border-radius: 25px;
+  padding: 9px 15px;
+  font-size: 13px;
+  box-shadow: none;
+  transition: border-color 0.3s ease,
+              box-shadow 0.3s ease;
+}
+
+.navbar .form-control::placeholder {
+  color: #8193bb;
+}
+
+.navbar .form-control:focus {
+  background: #0c1528;
+  color: #e0e9ff;
+  border-color: #8badff;
+  box-shadow: 0 0 10px rgb(113 156 255 / 15%);
+}
+
+/* BOTÓN DEL BUSCADOR */
+
+.navbar .btn-outline-success {
+  color: #a9c3ff;
+  border: 1px solid #5478ba;
+  border-radius: 25px;
+  padding: 8px 18px;
+  background: transparent;
+  font-size: 13px;
+  transition: all 0.3s ease;
+}
+
+.navbar .btn-outline-success:hover {
+  background: #719cff;
+  border-color: #719cff;
+  color: #080f20;
+}
+
+/* BOTÓN HAMBURGUESA */
+
+.navbar .navbar-toggler {
+  border: 1px solid #395687;
+  box-shadow: none;
+  padding: 7px 10px;
+}
+
+.navbar .navbar-toggler:focus {
+  box-shadow: 0 0 0 2px rgb(113 156 255 / 20%);
+}
+
+/* Icono claro sobre el fondo oscuro */
+
+.navbar .navbar-toggler-icon {
+  filter: invert(75%) sepia(25%) saturate(500%)
+    hue-rotate(185deg) brightness(110%);
+}
+
+/* ==============================
+   TABLETS Y CELULARES
+============================== */
+
+@media (max-width: 991.98px) {
+  .navbar {
+    padding: 12px 20px;
+  }
+
+  .navbar .navbar-collapse {
+    padding-top: 18px;
+  }
+
+  .navbar .navbar-nav {
+    gap: 2px;
+  }
+
+  .navbar .nav-link {
+    padding: 12px 5px;
+  }
+
+  .navbar .nav-link::after {
+    left: 5px;
+    right: auto;
+    width: 35px;
+  }
+
+  .navbar form {
+    margin-top: 15px;
+    padding-bottom: 10px;
+  }
+
+  .navbar form .form-control {
+    min-width: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 12px 15px;
+  }
+
+  .navbar .navbar-brand {
+    font-size: 17px;
+    letter-spacing: 2px;
+  }
+
+  .navbar form {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .navbar form .form-control {
+    flex: 1;
+    margin-right: 0 !important;
+  }
+}

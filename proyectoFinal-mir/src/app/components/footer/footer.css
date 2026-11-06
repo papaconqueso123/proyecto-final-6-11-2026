@@ -1,0 +1,234 @@
+
+/* ==============================
+   FOOTER VELVET MOON
+   PALETA AZUL CELESTIAL
+============================== */
+
+:host {
+  display: block;
+  margin-top: auto;
+}
+
+.footer-moon {
+  background-color: #080f20;
+  color: #c3d2f5;
+  font-family: inherit;
+  border-top: 1px solid #344e7e;
+}
+
+/* LOGO */
+
+.footer-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: #a9c3ff;
+  font-family: Georgia, serif;
+  font-size: 21px;
+  letter-spacing: 3px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-logo:hover {
+  color: #ffffff;
+}
+
+.moon-symbol {
+  font-size: 39px;
+  line-height: 1;
+  color: #8badff;
+}
+
+/* DESCRIPCIÓN */
+
+.footer-description {
+  max-width: 320px;
+  color: #a9bce5;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+/* TÍTULOS */
+
+.footer-title {
+  color: #a9c3ff;
+  font-family: Georgia, serif;
+  font-size: 17px;
+  font-weight: normal;
+  margin-bottom: 22px;
+}
+
+/* ENLACES */
+
+.footer-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-list li {
+  margin-bottom: 13px;
+  color: #a9bce5;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.footer-list a,
+.legal-links a {
+  color: #a9bce5;
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+.footer-list a:hover,
+.legal-links a:hover {
+  color: #ffffff;
+}
+
+/* REDES SOCIALES */
+
+.social-links a {
+  display: inline-flex;
+  width: 37px;
+  height: 37px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #4265a5;
+  border-radius: 50%;
+  color: #a9c3ff;
+  text-decoration: none;
+  font-size: 11px;
+  transition: all 0.25s ease;
+}
+
+.social-links a:hover {
+  background-color: #719cff;
+  border-color: #719cff;
+  color: #080f20;
+  box-shadow: 0 0 12px rgb(113 156 255 / 25%);
+  transform: translateY(-3px);
+}
+
+/* HORARIOS */
+
+.footer-hours {
+  color: #a9bce5;
+  font-size: 13px;
+  line-height: 1.9;
+  margin-top: 18px;
+}
+
+/* NEWSLETTER */
+
+.newsletter-section {
+  border-top: 1px solid #344e7e;
+  border-bottom: 1px solid #344e7e;
+  padding-bottom: 32px;
+}
+
+.newsletter-form .form-control {
+  background-color: #0c1528;
+  border: 1px solid #395687;
+  color: #e0e9ff;
+  padding: 13px 15px;
+  font-size: 13px;
+  border-radius: 25px 0 0 25px;
+  box-shadow: none;
+  transition: border-color 0.3s ease,
+              box-shadow 0.3s ease;
+}
+
+.newsletter-form .form-control::placeholder {
+  color: #8193bb;
+}
+
+.newsletter-form .form-control:focus {
+  background-color: #0c1528;
+  border-color: #8badff;
+  color: #e0e9ff;
+  box-shadow: 0 0 10px rgb(113 156 255 / 15%);
+}
+
+/* BOTÓN NEWSLETTER */
+
+.newsletter-button {
+  background-color: #719cff;
+  border: 1px solid #719cff;
+  color: #080f20;
+  font-size: 12px;
+  padding: 0 18px;
+  border-radius: 0 25px 25px 0;
+  transition: all 0.25s ease;
+}
+
+.newsletter-button:hover {
+  background-color: #a9c3ff;
+  border-color: #a9c3ff;
+  color: #080f20;
+  box-shadow: 0 0 12px rgb(113 156 255 / 20%);
+}
+
+.newsletter-note {
+  display: block;
+  margin-top: 10px;
+  color: #8193bb;
+  font-size: 11px;
+}
+
+/* COPYRIGHT */
+
+.footer-bottom {
+  padding-bottom: 10px;
+}
+
+.copyright {
+  color: #91a8d8;
+  font-size: 11px;
+  line-height: 1.8;
+}
+
+.legal-links a {
+  font-size: 11px;
+}
+
+/* ==============================
+   TABLETS Y CELULARES
+============================== */
+
+@media (max-width: 767.98px) {
+  .footer-moon .container {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .footer-logo {
+    font-size: 19px;
+  }
+
+  .footer-bottom .legal-links {
+    justify-content: flex-start !important;
+    gap: 12px !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .newsletter-form .input-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .newsletter-form .form-control {
+    border-radius: 25px;
+  }
+
+  .newsletter-button {
+    padding: 12px;
+    width: 100%;
+    border-radius: 25px;
+  }
+
+  .legal-links {
+    flex-direction: column;
+  }
+}

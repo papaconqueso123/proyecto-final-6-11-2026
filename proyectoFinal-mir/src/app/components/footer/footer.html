@@ -1,0 +1,191 @@
+
+<footer class="footer-moon">
+  <div class="container py-5">
+
+    <div class="row g-5">
+
+      <!-- Marca -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <a routerLink="/" class="footer-logo">
+          <span class="moon-symbol">☾</span>
+          <span>VELVET MOON</span>
+        </a>
+
+        <p class="footer-description mt-3">
+          Tu estilo, tu universo.
+          Moda y accesorios para expresar
+          quién sos en cada detalle.
+        </p>
+
+        <div class="social-links d-flex gap-3 mt-4">
+          <a href="https://instagram.com/"
+             target="_blank"
+             rel="noopener noreferrer"
+             aria-label="Instagram">IG</a>
+
+          <a href="https://facebook.com/"
+             target="_blank"
+             rel="noopener noreferrer"
+             aria-label="Facebook">FB</a>
+
+          <a href="https://tiktok.com/"
+             target="_blank"
+             rel="noopener noreferrer"
+             aria-label="TikTok">TK</a>
+
+          <a href="https://pinterest.com/"
+             target="_blank"
+             rel="noopener noreferrer"
+             aria-label="Pinterest">PI</a>
+        </div>
+      </div>
+
+      <!-- Navegación -->
+      <div class="col-6 col-md-3 col-lg-2">
+        <h5 class="footer-title">Explorá</h5>
+
+        <ul class="footer-list">
+          <li><a routerLink="/">Inicio</a></li>
+          <li><a routerLink="/ropa">Ropa</a></li>
+          <li><a routerLink="/accesorios">Accesorios</a></li>
+          <li><a routerLink="/bolsos">Bolsos</a></li>
+          <li><a routerLink="/joyeria">Joyería</a></li>
+          <li><a routerLink="/ofertas">Ofertas</a></li>
+        </ul>
+      </div>
+
+      <!-- Ayuda -->
+      <div class="col-6 col-md-3 col-lg-2">
+        <h5 class="footer-title">Ayuda</h5>
+
+        <ul class="footer-list">
+          <li>
+            <a routerLink="/preguntas-frecuentes">
+              Preguntas frecuentes
+            </a>
+          </li>
+          <li><a routerLink="/guia-de-talles">Guía de talles</a></li>
+          <li><a routerLink="/envios">Envíos y entregas</a></li>
+          <li>
+            <a routerLink="/cambios-y-devoluciones">
+              Cambios y devoluciones
+            </a>
+          </li>
+          <li><a routerLink="/contacto">Contacto</a></li>
+        </ul>
+      </div>
+
+      <!-- Contacto -->
+      <div class="col-12 col-lg-4">
+        <h5 class="footer-title">Contactanos</h5>
+
+        <ul class="footer-list contact-list">
+          <li>⌖ Av. de las Estrellas 458, Local 3</li>
+          <li>Ciudad de Lunaria, Argentina</li>
+          <li>
+            <a href="mailto:hola@velvetmoon.example">
+              ✉ hola@velvetmoon.example
+            </a>
+          </li>
+          <li>
+            <a href="tel:+542995550182">
+              ☎ +54 299 555-0182
+            </a>
+          </li>
+        </ul>
+
+        <p class="footer-hours">
+          Lunes a viernes: 10 a 19 h<br>
+          Sábados: 10 a 14 h
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Newsletter -->
+    <div class="newsletter-section mt-5 pt-4">
+      <div class="row align-items-center g-4">
+
+        <div class="col-12 col-md-6">
+          <h5 class="footer-title">
+            Un universo de novedades ✨
+          </h5>
+          <p class="footer-description mb-0">
+            Descubrí nuevas colecciones, tendencias
+            y promociones exclusivas.
+          </p>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <form class="newsletter-form"
+                (submit)="onNewsletterSubmit($event)">
+
+            <label for="newsletterEmail" class="visually-hidden">
+              Correo electrónico
+            </label>
+
+            <div class="input-group">
+              <input
+                id="newsletterEmail"
+                type="email"
+                class="form-control"
+                placeholder="Tu correo electrónico"
+                aria-label="Tu correo electrónico"
+                required
+              >
+
+              <button class="btn newsletter-button" type="submit">
+                Suscribirme →
+              </button>
+            </div>
+
+            <small class="newsletter-note">
+              Recibí las novedades de Velvet Moon.
+            </small>
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Parte legal -->
+    <div class="footer-bottom mt-5 pt-4">
+      <div class="row align-items-center gy-3">
+
+        <div class="col-12 col-lg-5">
+          <p class="copyright mb-0">
+            © 2026 Velvet Moon. Todos los derechos reservados.
+          </p>
+        </div>
+
+        <div class="col-12 col-lg-7">
+          <nav class="legal-links d-flex flex-wrap gap-3 justify-content-lg-end"
+               aria-label="Enlaces legales">
+
+            <a routerLink="/politica-de-privacidad">
+              Privacidad
+            </a>
+
+            <a routerLink="/aviso-legal">
+              Aviso legal
+            </a>
+
+            <a routerLink="/politica-de-cookies">
+              Cookies
+            </a>
+
+            <a routerLink="/terminos-y-condiciones">
+              Términos y condiciones
+            </a>
+
+            <a routerLink="/mapa-del-sitio">
+              Mapa del sitio
+            </a>
+          </nav>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
